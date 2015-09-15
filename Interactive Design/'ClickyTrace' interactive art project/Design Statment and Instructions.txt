@@ -1,0 +1,78 @@
+Clicky Trace – Design Statement
+Scott Beale
+
+###controls quick guide####
+Your keyboard is a touch pad for drawing!
+Slide your finger along your keys to draw.(For a complete experience, a laptop or shallow-key keyboard is required)
+The drawing area defined by the parallelogram defined by the corners of the 1, 0, /, and z keys
+Lift your finger to start a new figure.
+‘Backspace’ will reset the drawing.
+###################
+
+Consider the common methods for interfacing with a computing device. While many optional 
+peripherals exist, such as microphones or cameras, most of the data input by a user to control the 
+computer usually comes through a pairing of keyboard and pointing device. This pairing corresponds 
+logically to the nature of modern computing. The keyboard allows for the input of commands while the 
+pointing device allows the user to navigate the 2D *space* represented in contemporary graphical user 
+interfaces. Pointing devices vary, from the classic mouse to the increasingly common touch-screen, but 
+they all allow for a user to express spatial data to the computer. 
+
+With pointing devices so clearly established as the spatial input device, it is easy to ignore the spatial 
+properties of the keyboard. When first learning to type, a computer user becomes very aware of the 
+keyboard’s arrangement of keys, (*where* is N in relation to R? SHIFT in relation to CTRL?), but as the 
+user becomes proficient at typing, their awareness diminishes as they become able to think only of the 
+commands they wish to input.  In general, the functionality of the keys on a keyboard remains 
+independent the keys’ actual positions. Even though the keys are necessarily spatially arranged, the 
+keyboard *as a space* is almost universally overlooked.
+
+
+The idea for my project came after I noticed myself attempting to spell out words on the keyboard out 
+of letters formed by gestalt combinations of keys. My project, Clicky Trace, serves as a visual metaphor 
+of the keyboard as an interactive space. To accomplish this, Clicky Trace transforms the keyboard into a 
+touchpad-like device, where the physical arrangement of keys corresponds to a virtual representation 
+on the 2D canvas. Instead of being a collection of possible commands, the keys become a single draw-
+able surface.
+
+The ‘surface’ represented in Clicky Trace is bounded by the parallelogram with cornes at the ‘1’, ‘0’, ‘/’, 
+and ‘z’ keys. To use the program, use your finger to press one of the keys and drag across the keyboard 
+to draw.  (This probably works better on some keyboards than others.) If you pick up your finger, the 
+drawing will slowly fade and you can begin to draw in another location. To completely reset the 
+drawing, press backspace.
+
+
+The drawing area in Clicky Trace is defined by four rows of ten keys. Each key corresponds to a specific 
+spatial location on the canvas corresponding to the relative physical position of the key, for a total of 
+forty possible subdivisions of the space. With such a relatively low precision, a pure translation of the 
+keys being pressed to the corresponding location on screen would create a jagged and indecipherable 
+mess. Instead, I used a velocity based approach, where each key press of the user would designate the 
+*target* location for the ‘brush’. 
+The brush does not move instantaneously to each designated input, but instead moves corresponding to 
+the relative motion of the user’s ‘strokes’.  When a user presses a key, the brush moves from its current 
+location toward the new location with a velocity determined by the distance that needs to be covered—
+the farther the brush is from its target the faster it will move. To limit the speed while moving over large 
+distances, while still remaining reasonable over short ones, the velocity is normalized in regards to its 
+square root (so at a four times greater offset, the brush will move twice as fast).  In order to smooth the 
+motion of the brush the velocity is moderated by a weighted average with its old velocity. This gives the 
+brush a degree of ‘acceleration’ so that it does not abruptly change direction.  
+
+Overall, the result of these decisions is that the brush responds more to the general gestures of the user, 
+rather than the specific keys that he/she presses. With this system, the speed at which the user draws 
+greatly impacts what is represented on screen. It takes a small while to gain the feeling of the ‘rhythm’ 
+necessary for drawing with Clicky Trace, but the resulting feeling is much more organic than a more 
+‘accurate’ representation of what keys the user is pressing—it is possible to draw a relatively smooth ‘S’ 
+in Clicky Trace, despite the rectangular boundaries of the keys.
+
+Despite the ‘corrections’ of Clicky Trace, the keyboard still remains an imprecise method of spatial input. 
+Because of this imprecision, while it is easy to trace the general shape of a figure, lining up a collection 
+of different figures with any degree of accuracy is difficult. As an example, it is possible to scrawl a short 
+word in cursive, but drawing a nice smile inside a face is problematic. Clicky Trace is best suited for a 
+single figure at a time—abstract curves and doodles. To emphasize this fact, when the user picks up 
+their finger/brush, the sketch immediately begins to fade. This indicates that the figure they just drew is 
+in the past; they can start a new figure, but it will remain temporally distinct from their previous 
+drawings. (Also, it looks pretty.)
+
+In the same vein of temporal distinction, Clicky Trace uses a continually changing color of brush to 
+distinguish parts of a figure drawn later from that drawn earlier. The brush cycles smoothly through the 
+colors of the rainbow, and so when the brush passes over an area that has previously been drawn on, 
+the new color separates the newer stroke as in the foreground, while the old stroke is overlapped. 
+

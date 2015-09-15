@@ -1,0 +1,10 @@
+The '40k Weapon Soundpack' is an ongoing personal project with the goal of creating a suite of weapon sound effects inspired by the Warhammer 40,000 IP.
+The '40k' IP is portrayed across a wide variety of video game genres. Almost all of these games include the iconic 'Bolt Gun'(Bolter). 
+Every portrayal of this weapon has dissappointed me, not mechanically, but because I do not believe the sound effects used represent how the weapon functions canonically.
+The Bolt Gun fires a massive caliber, self-propelled, exploding warhead, and I felt no auditory medium has done the weapon justice. 
+
+Currently, this pack features three gun shot effects--one for the standard bolter, one for the pistol version, and one for its heavy machine gun iteration. 
+Additionally included are short clips of what multiple bursts of fire might sound like. 
+
+Each sound effect was created through a combination of 5 heavily modified samples taken from freesounds.org
+Individual samples were processed heavily, each being fine tuned, compressed, and equalized so that they could be spliced together to create the sounds I invisioned.

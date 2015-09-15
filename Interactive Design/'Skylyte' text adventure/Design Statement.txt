@@ -1,0 +1,150 @@
+Skylyte – design statement
+Scott Beale
+I had thought you had asked for a fairly moderately lengthed description of my design process, but there 
+was some confusion. So in the case that you wanted a shorter description, I’ve included a TL;DR version 
+here. If you DID want the longer one, please skip this.
+
+########################################
+The initial design direction for my interactive fiction stemmed from my thoughts about Zork and Book & 
+Volume. Some of the devices they used were rewarding and entertaining while others were frustrating 
+and confusing. 
+Zork portrayed an environment fun to explore, but often displayed that space in a strange way to 
+represent twisting passages and the like, but I don’t think it worked well to a textually. Book & volume 
+utilized a grid based system. This was much less frustrating, but made the space fee especially artificial. I 
+wanted my IF to be entertaining to explore like Zork, but remain comprehensible, like B&V. I decided on 
+a locale suiting the medium: an abandoned, subterranean research-facility. This sort of environment 
+translates well to Inform’s “room”-based organization of space, while still enabling engaging 
+exploration. The setting is fairly typical, but I think that is because this sort of space works. Other 
+settings might have been more creative, but I eschewed creativity for creativity’s sake to play to the 
+strengths of the medium.
+Amnesia is trope of the genre, but it is so because it puts the character in the same degree of knowledge 
+as the player. Although the character in my IF does not have amnesia, I did not want to ‘remove’ the 
+player from the character. I felt that Zork’s lack of detail of the protagonist was a benefit. The character 
+WAS the player, rather than in B&V where the character was CONTROLLED BY the player.  And so I do 
+not elaborate on whom the player is or why they are where they are, (besides the method by which they 
+got there).
+I felt Zork was lacking in narrative. The spaces and encounters in Zork seemed to lack much cohesion 
+(purpose). My goal was to create a narratively purposed space, that was also fun to explore. I sought to 
+enable the player as they explore the space to also be able to explore the *narrative* of the space. 
+Instead of a narrative where things ‘happen’, I tied my narrative to a space where something HAS 
+happened. In Skylyte, something dark has occurred and it is up to the player to fit the pieces together. 
+Clues dot the environment but are often extraneous to the actual completion of the game. Discovery is 
+left in the hands of the player.
+To drive the exploration of the space, I chose a series of challenging but comprehensible puzzles.In 
+Skylyte, although the solution to a puzzle is not always immediately apparent, I made an effort to make 
+the general objective clear. When you come across a locked door, you know you must find a way to 
+unlock it. 
+Additionally, I intentionally avoided features that I have found detracted 
+from an IF game, including time, combat, and--most notably--death. 
+There is no way for the player to die or to reach a condition that forces him 
+to restart; only the puzzles stand in the way.
+
+To be honest, I did not find the peer critique to be very helpful. I had already completed most of the 
+game at that point and in the ten minutes available to me I only had time to go over the general design 
+principles and feel of my game, none of which my peer group had anything to point out to improve. 
+They liked the concept and my reasons for not including death, as well as why I chose the setting I did. If 
+we had had time to let them actually play through the game I’m sure I would have gotten better 
+feedback but it was hard for them to comment without specifics.
+#########################################################
+
+
+The initial design direction for my interactive fiction stemmed from my thoughts about what I liked and 
+what I disliked about the other interactive fictions that I played. Certain devices that both Zork and Book 
+& Volume used were rewarding and entertaining while others were frustrating and confusing. 
+As a textually based platform, interactive fictions cannot visually depict the space they represent, which 
+is the primary way people are used to understanding space.  Zork portrayed a varied and interesting 
+environment that was a joy to explore, but was frequently guilty of “displaying” that space in a way that 
+felt exceedingly eratic. For example, in one location a player might go west, then south, then east, and 
+end up in his original location, or in several places, go in one direction and then return the opposite way 
+only to end up in a different place. While this was utilized to represent twisting passages and the like, I 
+do not think it translates well to a textually based space. Book & volume went the opposite direction, 
+with the primary space of the game occurring in a collection of regularly placed city blocks ordered in a 
+grid. This was much easier and less frustrating to explore than Zork, but a side effect of this predictable 
+organization of “rooms” was that the space felt especially artificial—like the rooms were mere 
+‘containers’ rather than actual representations of space. 
+
+With these thoughts in mind, I decided to set my interactive fiction in a locale that suits the medium: an 
+abandoned, subterranean research-facility. This allows me to constrain the player to an indoor, man-
+made environment in a believable way that does not break immersion. This sort of environment 
+translates well to Inform’s “room”-based organization of space, as well as its directional system of 
+movement through it. While this setting is fairly typical of the genre, I think the reason for this is not 
+mere tradition—it’s because it works. Other settings might have been more creative, but I don’t feel 
+creativity for creativity’s sake is worth hindering the player’s ability to understand the space being 
+portrayed. Additionally, my environment gives an easily communicated goal—escape to the outside I 
+believe is more compelling than an arbitrarily defined objective, or the promise of some unusable 
+reward.
+
+Amnesia is trope of the genre, but it is so because it provides a sort of tabula rasa for the player to insert 
+himself into. A character with amnesia exists as though he has no past, putting the character in the same 
+degree of knowledge as the player, thus avoiding the need to come up with devices to explain 
+information to the player that the character would already know. Although the character in my IF does 
+not have amnesia, I also wanted to avoid those storytelling devices, because I believe they separate the 
+player from immersion in the game. Interactive fiction relies on, and benefits heavily from, a player’s 
+imagination, enabling the player to really sink into the metaphorical shoes of their character. I felt that 
+Zork’s complete lack of exploration of the protagonist was a benefit. The character WAS the player 
+rather than in Book & Volume where the character was CONTROLLED BY the player.  And so, like in Zork, 
+I do not elaborate on whom the player is or why they are where they are, (besides the method by which 
+they got there), leaving that to the player to decide. 
+
+In Skylyte, the character falls (literally) into an environment just as alien to the character as to the 
+player. Exploration of this environment is what drives the narrative of my fiction. I enjoyed exploration 
+in Zork but felt it was lacking in narrative. The spaces and encounters in Zork seemed to lack much 
+cohesion. (Why is there a troll here? What is the purpose of this underground environment?) In order to 
+avoid this, I took care to create a space that was believable and immersive, but was also fun to explore. 
+This focus on exploration tied directly to how I chose to express my narrative. Instead of creating an 
+active narrative that is communicated to the player, I tied my narrative to the space. Just as the players 
+explore the world that surrounds them, they explore a narrative of events that have already passed. The 
+way I did this bears similarities to many designs of the Penumbra series of survival/puzzle horror games 
+(Although my first iteration of this project was completed before I played the series.)   The first game, in 
+particular, I would guess was heavily inspired by interactive fiction games and is very reminiscent of the 
+feel of them. While the follow up games had superior mechanics, the first one remains my favorite 
+because of the way it expresses its narrative. Ironically, one aspect of the original Penumbra’s commonly 
+critiqued is its “weak” story.  Certainly less *happened* in the original game, but instead of calling the 
+story weak, I would characterize it as minimalist—out of the way. Like in Skylyte, something dark has 
+happened in Peneumbra, and it is up to the player to fit the pieces together. Clues dot the environment, 
+often extraneous to the actual completion of the game, but necessary to discover the events that 
+unfolded beforehand. Beyond the establishing sequences, no breaks in immersion occur to force 
+background information on the player—discovery is left in the hands of the player, and this is what 
+makes the narrative truly explore-able.  However, the full picture is never truly revealed, and some of 
+the mystery is left to the player to fill in.
+
+While exploration of space and narrative describes the overarching experience I wished to impart, I 
+chose to drive this exploration by presenting a series of obstacles the player must surmount. The 
+presence of interactive conflict of some sort, in my mind defines what makes a game. Without it you are 
+left with simulation. Avoiding death and defeating/killing opponents is an easy way to add conflict to a 
+game, but I do not think it suits the interactive fiction medium. Death or “losing” in interactive fiction 
+breaks immersion.  Unless the consequence of death bars the player from reattempting the game, it 
+merely becomes an arbitrary punishment. Without the display of skill as a method to avoid this 
+punishment, the punishment must necessarily occur as a consequence of the player exploring his 
+options, which is contrary to the explorative strengths of the interactive fiction medium. Similarly, I 
+dispensed with time-based  and resource consumption mechanics, such as lanterns running out of fuel. 
+In order for this sort of design to serve any purpose, it must punish the player for making the ‘wrong’ 
+choices for decisions that the player must not always know the answer to. 
+
+For the conflict in Skylyte, I chose to stick to a series of challenging, but comprehensible puzzles.  I 
+enjoyed many of the puzzles in Zork, but much of the time I was a presented with a puzzle, I was at a 
+complete loss not just to *how* I was supposed to complete it, but also to *what* exactly I was 
+supposed to be doing. In Skylyte, although the solution to a puzzle is not always immeadietly apparent, I 
+made an effort to make the general objective clear. When you come across a locked door, you know you 
+must find a way to unlock it. When you come across a darkened room, you know you must find a way to 
+light it. Coinciding with this decision is the way I handle objects. The objects you can pick up in the game 
+have an obvious purpose or value, even if you have not encountered the corresponding puzzle it relates 
+to. In this way the player is not forced to meta-game. There are no random old boots it would be 
+advisable to pick up because it is likely some sort of boot-eating monster exists later in the game. 
+
+My primary design objective was to create a space that was interesting and rewarding to navigate. I 
+sought to create an immersive experience that allowed players to explore a mysterious and somewhat 
+dark setting that remained believable. I made use of the strengths of the Interactive Fiction format in 
+describing space by designing the spatial connectivity of the environment to be easy to comprehend 
+textually. I forwent description of the character or his/her history in order to allow the player to explore 
+the narrative spatially contained in the environment.  I packed Skylyte with puzzles to drive their 
+exploration, but avoided having the player need to make arbitrary decisions to complete these puzzles. 
+To be honest, I did not find the peer critique to be very helpful. I had already completed most of the 
+game at that point and in the ten minutes available to me I only had time to go over the general design 
+principles and feel of my game, none of which my peer group had anything to point out to improve. 
+They liked the concept and my reasons for not including death, as well as why I chose the setting I did. If 
+we had had time to let them actually play through the game I’m sure I would have gotten better 
+feedback but it was hard for them to comment without specifics.
+ 
+
+
